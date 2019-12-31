@@ -44,7 +44,8 @@
 
 <script src="/js/iconfont.js?v=1.0.1" ></script>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="lanxplanet" type="application/atom+xml">
+</head>
 <div style="display: none">
   <input class="theme_disqus_on" value="false">
   <input class="theme_preload_comment" value="false">
@@ -137,7 +138,7 @@
     
     
     </div>
-    <div></div>
+    <div><a class="about  site_url"  href="/about">关于</a></div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="1">
 
@@ -215,7 +216,7 @@
     }
 </style>
 </div>
-            <h2 id="关于lanxplanet"><a href="#关于lanxplanet" class="headerlink" title="关于lanxplanet"></a>关于lanxplanet</h2><p><strong>lanxplanet</strong> 是Lan Xiang的个人站，创建本站目的为在学习工作中坚持反思，坚持创作。</p>
+            <h2 id="关于lanxplanet"><a href="#关于lanxplanet" class="headerlink" title="关于lanxplanet"></a>关于lanxplanet</h2><p><strong>lanxplanet</strong> 是Lan Xiang的个人站，创建本站目的为在学习工作中坚持反思，坚持分享。</p>
 <p>到目前为止已经写了<code class="article_number"></code>篇文章</p>
 <p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
 
@@ -342,6 +343,25 @@
         $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
 
         
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
         
     }
 
