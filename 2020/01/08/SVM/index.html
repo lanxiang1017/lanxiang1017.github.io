@@ -13,16 +13,16 @@
 <meta property="og:site_name" content="lanxplanet">
 <meta property="og:description" content="Support Vector Machine前言SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins Prim">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm1.png">
-<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm3.png">
-<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm4.png">
-<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm5.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm2.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 <meta property="article:published_time" content="2020-01-08T02:31:16.000Z">
-<meta property="article:modified_time" content="2020-01-08T12:31:12.708Z">
+<meta property="article:modified_time" content="2020-01-08T12:57:06.479Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="svm">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm1.png">
+<meta name="twitter:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -198,20 +198,20 @@
     
     <nav id="title-list-nav">
         
-        <a  class=""
-           href="/2019/12/28/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2019-12-28 15:13:43">2019/12/28</span>
-        </a>
-        
         <a  class="机器学习 "
            href="/2020/01/08/SVM/"
            data-tag="svm"
            data-author="" >
             <span class="post-title" title="SVM">SVM</span>
             <span class="post-date" title="2020-01-08 10:31:16">2020/01/08</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/12/28/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-12-28 15:13:43">2019/12/28</span>
         </a>
         
     </nav>
@@ -250,7 +250,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-08 20:31:12'>2020-01-08 10:31</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-08 20:57:06'>2020-01-08 10:31</time>
         
     </div>
     <div class="article-meta">
@@ -312,12 +312,12 @@
 </ul>
 <p>在对SVM进行细节讲解之前，我们先弄清楚SVM到底在做什么。我们考虑这样一个例子，假设小明需要向银行申请贷款用来购房，银行需要决定是否批准小明的申请，在此之前银行都是通过 <strong>年龄-收入</strong> 来决定，并且银行有如下的历史数据：</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm1.png">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
 </p>
 
 <p>这时如果银行想通过以前的数据来决定是否批准小明的申请该怎么做呢，我们会很自然的想到在上述数据中划一个界限，如果小明落在这个界限的一边，则批准申请，否则拒绝，即如下图所示：</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm3.png">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm2.png">
 </p>
 我们划的这个界限也叫做Hyperplane。
 
@@ -326,7 +326,7 @@
 </blockquote>
 <p><strong>那么问题来了，以上数据中，Hyperplane只有一个吗？</strong><br>答案很显然是不止一个，要知道我们划的这个Hyperplane可是会直接影响到小明的贷款申请，所以这个Hyperplane的好坏显得非常重要，如下图所示。 </p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm4.png">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
 </p>
 
 <p><strong>那如何找到这个最优的界限(Hyperplane)呢？</strong><br>这就是SVM需要做的事情，概括的说，<strong>SVM提供了一种系统的方法来将数据最优化区分</strong>。</p>
@@ -351,7 +351,7 @@
 <p><em>2. Geometric margin $\gamma_{i}^{g}$ of an example $\mathbf({x_i, d_i})$</em><br>$$\gamma_{i}^{g}=d_{i}\left(\frac{1}{|\mathbf{w}|} \mathbf{w}^{T} \mathbf{x}_{i}+\frac{1}{|\mathbf{w}|} b\right)<br>$$</p>
 <p>可以证明$\gamma_{i}^{g}$的物理意义是点${x_i}$到我们给定的Hyperplane的欧式距离，数学证明之后会放在附录里，这里我们先重点关注其意义。</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm5.png">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 </p>
 
 <p>根据数学定义，我们可以发现$\gamma_{i}^{f}$与$\gamma_{i}^{g}$的关系：<br>$$\gamma_{i}^{g}=\frac{\gamma_{i}^{f}}{|\mathbf{w}|}<br>$$ </p>
@@ -375,7 +375,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="Lan Xiang">Lan Xiang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-01-08, 10:31:16</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-08, 20:31:12</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-08, 20:57:06</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/08/SVM/" title="SVM">http://lanxplanet.com/2020/01/08/SVM/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
