@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | lanxplanet</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | lanxplanet">
+  <title>SVM | lanxplanet</title>
+  <meta name="keywords" content=" svm ">
+  <meta name="description" content="SVM | lanxplanet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Support Vector Machine前言SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins Prim">
 <meta property="og:type" content="article">
@@ -226,19 +226,31 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-SVM" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">SVM</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            
+                <a  data-rel="机器学习">机器学习</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">svm</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-28 15:13:43'>2019-12-28 15:13</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-08 20:31:12'>2020-01-08 10:31</time>
         
     </div>
     <div class="article-meta">
@@ -271,7 +283,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Support-Vector-Machine"><span class="toc-text">Support Vector Machine</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SVM简介"><span class="toc-text">SVM简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Margins"><span class="toc-text">Margins</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -287,19 +299,65 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Support-Vector-Machine"><a href="#Support-Vector-Machine" class="headerlink" title="Support Vector Machine"></a>Support Vector Machine</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。</p>
+<h2 id="SVM简介"><a href="#SVM简介" class="headerlink" title="SVM简介"></a>SVM简介</h2><p>SVM是一种有监督的机器学习算法，用来对两类数据进行分类。</p>
+<p>整个SVM算法有以下几个重点：</p>
+<ul>
+<li>Margins</li>
+<li>Primal</li>
+<li>Lagrange</li>
+<li>Dual</li>
+<li>Soft Margin</li>
+<li>Kernel</li>
+</ul>
+<p>在对SVM进行细节讲解之前，我们先弄清楚SVM到底在做什么。我们考虑这样一个例子，假设小明需要向银行申请贷款用来购房，银行需要决定是否批准小明的申请，在此之前银行都是通过 <strong>年龄-收入</strong> 来决定，并且银行有如下的历史数据：</p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm1.png">
+</p>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>这时如果银行想通过以前的数据来决定是否批准小明的申请该怎么做呢，我们会很自然的想到在上述数据中划一个界限，如果小明落在这个界限的一边，则批准申请，否则拒绝，即如下图所示：</p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm3.png">
+</p>
+我们划的这个界限也叫做Hyperplane。
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Hyperplane 是指在高维数据中的一个平面，在上图二维数据中这个hyperplane就可以是一条直线，一个Hyperplane可由$(\mathbf{w}, b)$表示，可以写成$g(\mathbf{x})=\mathbf{w}^{T} \mathbf{x}+b=0$<br>Hyperplane将对给定的点 $\mathbf{x}<em>{i}$ 进行区分：<br>$$\operatorname{sgn}\left[g\left(\mathbf{x}</em>{i}\right)\right]=\left{\begin{array}{lll}<br>{+1} &amp; {\text { if }} &amp; {g\left(\mathbf{x}<em>{i}\right)&gt;0} \<br>{-1} &amp; {\text { if }} &amp; {g\left(\mathbf{x}</em>{i}\right)&lt;0}<br>\end{array}\right.$$如果Hyperplane正确区分给定的数据，则<br>$$<br>\operatorname{sgn}\left[g\left(\mathbf{x}<em>{i}\right)\right]=d</em>{i} \quad \text { or } \quad \operatorname{sgn}\left[d_{i} g\left(\mathbf{x}_{i}\right)\right]=1<br>$$</p>
+</blockquote>
+<p><strong>那么问题来了，以上数据中，Hyperplane只有一个吗？</strong><br>答案很显然是不止一个，要知道我们划的这个Hyperplane可是会直接影响到小明的贷款申请，所以这个Hyperplane的好坏显得非常重要，如下图所示。 </p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm4.png">
+</p>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p><strong>那如何找到这个最优的界限(Hyperplane)呢？</strong><br>这就是SVM需要做的事情，概括的说，<strong>SVM提供了一种系统的方法来将数据最优化区分</strong>。</p>
+<p><strong>我们如何定义这个最优的界限(Hyperplane)呢?</strong><br>这就涉及到我们接下来要介绍的Margins了</p>
+<h2 id="Margins"><a href="#Margins" class="headerlink" title="Margins"></a>Margins</h2><p>Margin，也就是间隔，是SVM理论中非常关键的理念。<br>Margin 总的来说有三类：</p>
+<ul>
+<li>Functional Margin</li>
+<li>Geometric Margin</li>
+<li>Margin of a training set</li>
+</ul>
+<p>我们可以再细分：</p>
+<ul>
+<li>$\gamma_{i}^{f}$ : Functional margin of an example $\mathbf({x_i, d_i})$</li>
+<li>$\gamma_{i}^{g}$: Geometric margin of an example $\mathbf({x_i, d_i})$</li>
+<li>$\gamma^{f}$: Functional margin of a training set</li>
+<li>$\gamma^{g}$: Geometric margin of a training set</li>
+<li>$\gamma$: Margin of a training set</li>
+</ul>
+<p>接下来我们看看每种Margin的数学定义及其物理意义</p>
+<p>给定一个Hyperplane $(\mathbf{w}, b)$：</p>
+<p><em>1. Functional Margin $\gamma_{i}^{f}$ of an example $\mathbf({x_i, d_i})$</em><br>$$\gamma_{i}^{f}=d_{i}\left(\mathbf{w}^{T} \mathbf{x}_{i}+b\right)<br>$$ </p>
+<p><em>2. Geometric margin $\gamma_{i}^{g}$ of an example $\mathbf({x_i, d_i})$</em><br>$$\gamma_{i}^{g}=d_{i}\left(\frac{1}{|\mathbf{w}|} \mathbf{w}^{T} \mathbf{x}_{i}+\frac{1}{|\mathbf{w}|} b\right)<br>$$</p>
+<p>可以证明$\gamma_{i}^{g}$的物理意义是点${x_i}$到我们给定的Hyperplane的欧式距离，数学证明之后会放在附录里，这里我们先重点关注其意义。</p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/blog_pics/SVM/svm5.png">
+</p>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>根据数学定义，我们可以发现$\gamma_{i}^{f}$与$\gamma_{i}^{g}$的关系：<br>$$\gamma_{i}^{g}=\frac{\gamma_{i}^{f}}{|\mathbf{w}|}<br>$$ </p>
+<p><em>3.  Functional margin $\gamma^{f}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{f}}$:<br>$$\gamma^{f}=\min <em>{1 \leq i \leq N}\left{\gamma</em>{i}^{f}\right}<br>$$</p>
+<p><em>4.  Geometric margin $\gamma^{f}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{f}}$:<br>$$\gamma^{g}=\min <em>{1 \leq i \leq N}\left{\gamma</em>{i}^{g}\right}<br>$$</p>
+<p>未完待续</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 lanxiang1017@gmail.com </span>
@@ -313,12 +371,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World</p>
+    <p><span class="copy-title">文章标题:</span>SVM</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="Lan Xiang">Lan Xiang</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-28, 15:13:43</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-28, 15:13:43</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/28/hello-world/" title="Hello World">http://lanxplanet.com/2019/12/28/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2020-01-08, 10:31:16</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-08, 20:31:12</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/08/SVM/" title="SVM">http://lanxplanet.com/2020/01/08/SVM/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
