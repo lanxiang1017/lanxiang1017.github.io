@@ -255,7 +255,34 @@
 <p>根据数学定义，我们可以发现$\gamma_{i}^{f}$与$\gamma_{i}^{g}$的关系：</p>
 <script type="math/tex; mode=display">\gamma_{i}^{g}=\frac{\gamma_{i}^{f}}{\|\mathbf{w}\|}</script><p><em>3.  Functional margin $\gamma^{f}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{f}}$:</p>
 <script type="math/tex; mode=display">\gamma^{f}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{f}\right\}</script><p><em>4.  Geometric margin $\gamma^{g}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{g}}$:</p>
-<script type="math/tex; mode=display">\gamma^{g}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{g}\right\}</script><p>未完待续…</p>
+<script type="math/tex; mode=display">\gamma^{g}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{g}\right\}</script><p>由定义我们可以知道，一个数据集可以有不同的Geometric Margin，这完全取决于我们如何定义Hyperplane。</p>
+<p>因此，我们可以给出更具体的 Optimal Hyperplane 的定义：</p>
+<p>对于一个给定的数据集$S$，其 Optimal Hyperplane 是在所有的 Hyperplane中有最大的 $\gamma^{g}$ 的那个，这个最大的$\gamma^{g}$ 也被称为数据集$S$的Margin：</p>
+<script type="math/tex; mode=display">
+\gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {所有可能的Hyperplane }}</script><p>举一个具体的例子，假设我们现在有一个数据集$S$，为了求的$S$的Margin，我们首先要求在所有Hyperplane下$S$的Geometric Margin：</p>
+<p>Step 1. 对 Hyperplane 1 $\left(\mathbf{w}_{1}, b_{1}\right)$，求出所有样本点对应的 $\gamma_{i}^{g}$：</p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
+</p>
+
+<script type="math/tex; mode=display">
+\gamma_{i}^{g}=d_{i}\left(\left\langle\frac{1}{\left\|\mathbf{w}_{1}\right\|} \mathbf{w}_{1} \cdot \mathbf{x}_{i}\right\rangle+\frac{1}{\left\|\mathbf{w}_{1}\right\|} b_{1}\right)</script><p>Step 2. 找到 Hyperplane 1 情况下最小的 $\gamma_{i}^{g}$ ，这里我们假设是样本 ${x}_{1}$对应的 $\gamma_{1}^{g}$:</p>
+<script type="math/tex; mode=display">
+\min \left\{\gamma_{1}^{g}, \ldots, \gamma_{10}^{g}\right\}=\gamma_{1}^{g} \equiv \gamma_{\left(\mathrm{w}_{1}, b_{1}\right)}^{g}</script><p>Step 3. 对 Hyperplane 2，Hyperplane 3，…… , Hyperplane N 重复以上两步。</p>
+<p>Step 4. 找出以上三步求得的 $\gamma_{\left(\mathrm{w}, b\right)}^{g}$ 中最大的那一个：</p>
+<script type="math/tex; mode=display">
+\gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {所有可能的Hyperplane}}</script><p>如下图所示：</p>
+<p align="center">
+  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm7.png">
+</p>
+
+<p>至此我们就介绍完了Margin，Margin我写的非常详细，因为Margin是SVM的核心思想，理解了Margin的概念，对于后面用到的方法就会很好理解了。</p>
+<p>Margin 总结：</p>
+<p>Margin 用来表示能将两类数据点分开的间隔，这个间隔我们希望尽可能的宽，为了达到这个目的，我们在每一个可能的Hyperplane 下计算样本点到该 Hyperplane 的欧式距离，取最小距离作为该 Hyperplane 下的 $\gamma_{i}^{g}$，简单的说这样做是为了在该 Hyperplane 下尽可能的准确分隔两类，然后我们对所有可能的 Hyperplane 求出的 $\gamma_{\left(\mathrm{w}, b\right)}^{g}$ 中取最大的那一个，简单的说这样做的目的是尽可能的容忍测试数据的噪声，提升模型的泛化能力，关于这两点也是有数学证明的，但不建议刚接触 SVM 的朋友陷入各种数学证明，容易自闭，某些定理我们可以忽略数学证明当作事实来看。</p>
+<p>ps. 想看证明的同学可以自行搜索 Cristianini and Shawe-Taylor 写的书…</p>
+<p>学完了 Margin，我们自然会想到一个关键问题，给定一个训练集$S$，我们如何找出最优超平面？</p>
+<p>让我们从 Primal Problem 开始讲起…</p>
+<p>未完待续…</p>
 
     
 
