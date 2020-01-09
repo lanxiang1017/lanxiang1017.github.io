@@ -6,19 +6,19 @@
   <meta name="keywords" content=" svm ">
   <meta name="description" content="SVM | lanxplanet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点： * Margins">
+<meta name="description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins P">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SVM">
 <meta property="og:url" content="http://lanxplanet.com/2020/01/08/SVM/index.html">
 <meta property="og:site_name" content="lanxplanet">
-<meta property="og:description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点： * Margins">
+<meta property="og:description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins P">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm2.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 <meta property="article:published_time" content="2020-01-08T02:31:16.000Z">
-<meta property="article:modified_time" content="2020-01-09T02:25:38.331Z">
+<meta property="article:modified_time" content="2020-01-09T02:51:25.474Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="svm">
 <meta name="twitter:card" content="summary">
@@ -250,7 +250,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-09 10:25:38'>2020-01-08 10:31</time>
+        创建时间:<time class="date" title='更新时间: 2020-01-09 10:51:25'>2020-01-08 10:31</time>
         
     </div>
     <div class="article-meta">
@@ -304,7 +304,15 @@
 <p>SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。</p>
 <h2 id="svm简介">SVM简介</h2>
 <p>SVM是一种有监督的机器学习算法，用来对两类数据进行分类。</p>
-<p>整个SVM算法有以下几个重点： * Margins * Primal * Lagrange * Dual * Soft Margin * Kernel</p>
+<p>整个SVM算法有以下几个重点：</p>
+<ul>
+<li>Margins</li>
+<li>Primal</li>
+<li>Lagrange</li>
+<li>Dual</li>
+<li>Soft Margin</li>
+<li>Kernel</li>
+</ul>
 在对SVM进行细节讲解之前，我们先弄清楚SVM到底在做什么。我们考虑这样一个例子，假设小明需要向银行申请贷款用来购房，银行需要决定是否批准小明的申请，在此之前银行都是通过 <strong>年龄-收入</strong> 来决定，并且银行有如下的历史数据：
 <p align="center">
 <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
@@ -315,14 +323,24 @@
 </p>
 <p>我们划的这个界限也叫做Hyperplane。</p>
 <blockquote>
-<p>Hyperplane 是指在高维数据中的一个平面，在上图二维数据中这个hyperplane就可以是一条直线，一个Hyperplane可由<span class="math inline">\((\mathbf{w},b)\)</span>表示，可以写成<span class="math inline">\(g(\mathbf{x})=\mathbf{w}^{T} \mathbf{x}+b=0\)</span></p>
+<p>Hyperplane 是指在高维数据中的一个平面，在上图二维数据中这个hyperplane就可以是一条直线，一个Hyperplane可由(,b)表示，可以写成g()=^{T} +b=0</p>
 </blockquote>
 <blockquote>
-<p>Hyperplane将对给定的点 <span class="math inline">\(\mathbf{x}_{i}\)</span> 进行区分： <span class="math display">\[\operatorname{sgn}\left[g\left(\mathbf{x}_{i}\right)\right]=\left\{\begin{array}{lll}
+<p>Hyperplane将对给定的点 _{i} 进行区分:</p>
+</blockquote>
+<p><span class="math display">\[
+\begin{equation}
+\operatorname{sgn}\left[g\left(\mathbf{x}_{i}\right)\right]=\left\{\begin{array}{lll}
 {+1} &amp; {\text { if }} &amp; {g\left(\mathbf{x}_{i}\right)&gt;0} \\
 {-1} &amp; {\text { if }} &amp; {g\left(\mathbf{x}_{i}\right)&lt;0}
-\end{array}\right.\]</span></p>
-</blockquote>
+\end{array}\right.
+\end{equation}
+\]</span></p>
+<p><span class="math display">\[
+\begin{equation}
+\sum_{i=0}^n F_i \cdot \phi (H, p_i) - \sum_{i=1}^n a_i \cdot ( \tilde{x_i}, \tilde{y_i}) + b_i \cdot ( \tilde{x_i}^2 , \tilde{y_i}^2 )
+\end{equation}
+\]</span></p>
 <p>如果Hyperplane正确区分给定的数据，则 &gt;<span class="math display">\[\operatorname{sgn}\left[g\left(\mathbf{x}_{i}\right)\right]=d_{i} \quad \text { or } \quad \operatorname{sgn}\left[d_{i} g\left(\mathbf{x}_{i}\right)\right]=1\]</span></p>
 <p><strong>那么问题来了，以上数据中，Hyperplane只有一个吗？</strong></p>
 答案很显然是不止一个，要知道我们划的这个Hyperplane可是会直接影响到小明的贷款申请，所以这个Hyperplane的好坏显得非常重要，如下图所示。
@@ -375,7 +393,7 @@
     
     <p><span class="copy-title">本文作者:</span><a  title="Lan Xiang">Lan Xiang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-01-08, 10:31:16</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-09, 10:25:38</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-09, 10:51:25</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/08/SVM/" title="SVM">http://lanxplanet.com/2020/01/08/SVM/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -449,7 +467,7 @@
     </div>
 </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+  MathJax.Hub.Config("");
 </script>
 
 <script type="text/x-mathjax-config">
@@ -461,7 +479,7 @@
   });
 </script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+<script type="text/javascript" src="custom_mathjax_source">
 </script>
 <!-- End: Injected MathJax -->
 <!-- hexo-inject:end -->
