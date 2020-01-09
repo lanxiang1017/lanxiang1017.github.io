@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm7.png">
 <meta property="article:published_time" content="2020-01-08T02:31:16.000Z">
-<meta property="article:modified_time" content="2020-01-09T15:22:00.063Z">
+<meta property="article:modified_time" content="2020-01-09T15:28:20.987Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="svm">
 <meta name="twitter:card" content="summary">
@@ -272,11 +272,11 @@
 <p>根据数学定义，我们可以发现$\gamma_{i}^{f}$与$\gamma_{i}^{g}$的关系：</p>
 <script type="math/tex; mode=display">\gamma_{i}^{g}=\frac{\gamma_{i}^{f}}{\|\mathbf{w}\|}</script><p><em>3.  Functional margin $\gamma^{f}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{f}}$:</p>
 <script type="math/tex; mode=display">\gamma^{f}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{f}\right\}</script><p><em>4.  Geometric margin $\gamma^{g}$ of a training set $S$</em><br>定义为数据集$S$中最小的${\gamma_{i}^{g}}$:</p>
-<script type="math/tex; mode=display">\gamma^{g}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{g}\right\}</script><p>由定义我们可以知道，一个数据集可以有不同的Geometric Margin，这完全取决于我们如何定义Hyperplane。</p>
+<script type="math/tex; mode=display">\gamma^{g}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{g}\right\}</script><p>由定义我们可以知道，一个数据集可以有不同的 Geometric Margin，这完全取决于我们如何定义 Hyperplane。</p>
 <p>因此，我们可以给出更具体的 Optimal Hyperplane 的定义：</p>
-<p>对于一个给定的数据集$S$，其 Optimal Hyperplane 是在所有的 Hyperplane中有最大的 $\gamma^{g}$ 的那个，这个最大的$\gamma^{g}$ 也被称为数据集$S$的Margin：</p>
+<p>对于一个给定的数据集 $S$，其 Optimal Hyperplane 是在所有的 Hyperplane 中有最大的 $\gamma^{g}$ 的那个，这个最大的$\gamma^{g}$ 也被称为数据集 $S$ 的 Margin：</p>
 <script type="math/tex; mode=display">
-\gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {所有可能的Hyperplane }}</script><p>举一个具体的例子，假设我们现在有一个数据集$S$，为了求的$S$的Margin，我们首先要求在所有Hyperplane下$S$的Geometric Margin：</p>
+\gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {所有可能的Hyperplane }}</script><p>举一个具体的例子，假设我们现在有一个数据集 $S$ ，为了求得 $S$ 的 Margin，我们首先要求在所有 Hyperplane 下 $S$ 的 Geometric Margin：</p>
 <p>Step 1. 对 Hyperplane 1 $\left(\mathbf{w}_{1}, b_{1}\right)$，求出所有样本点对应的 $\gamma_{i}^{g}$：</p>
 <p align="center">
   <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
@@ -308,7 +308,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-01-09T15:22:00.063Z" itemprop="dateUpdated">2020-01-09 23:22:00</time>
+    Last updated: <time datetime="2020-01-09T15:28:20.987Z" itemprop="dateUpdated">2020-01-09 23:28:20</time>
 </span><br>
 
 
