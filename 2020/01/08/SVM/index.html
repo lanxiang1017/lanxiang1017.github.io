@@ -21,17 +21,19 @@
     
     
     <meta name="keywords" content="svm">
-    <meta property="og:type" content="article">
+    <meta name="description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins">
+<meta property="og:type" content="article">
 <meta property="og:title" content="SVM">
 <meta property="og:url" content="http://lanxplanet.com/2020/01/08/SVM/index.html">
 <meta property="og:site_name" content="lanxplanet">
+<meta property="og:description" content="Support Vector Machine 前言 SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。 SVM简介 SVM是一种有监督的机器学习算法，用来对两类数据进行分类。 整个SVM算法有以下几个重点：  Margins">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm2.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 <meta property="article:published_time" content="2020-01-08T02:31:16.000Z">
-<meta property="article:modified_time" content="2020-01-09T05:16:54.006Z">
+<meta property="article:modified_time" content="2020-01-09T06:43:34.784Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="svm">
 <meta name="twitter:card" content="summary">
@@ -64,7 +66,7 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">Lan Xiang</h5>
-          <a href="mailto:lanxiang10177@gmail.com" title="lanxiang10177@gmail.com" class="mail">lanxiang10177@gmail.com</a>
+          <a href="mailto:lanxiang1017@gmail.com" title="lanxiang1017@gmail.com" class="mail">lanxiang1017@gmail.com</a>
         </hgroup>
       </div>
     </div>
@@ -86,7 +88,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/Categories"  >
+              <a href="/categories/"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 Categories
               </a>
@@ -168,6 +170,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#support-vector-machine"><span class="post-toc-text">Support Vector Machine</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#svm简介"><span class="post-toc-text">SVM简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#margins"><span class="post-toc-text">Margins</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
 
 <article id="post-SVM"
   class="post-article article-type-post fade" itemprop="blogPost">
@@ -194,6 +203,15 @@
             <!-- ---
 title: SVM
 <p>date: 1578450676000 categories: Machine Learning tags: svm --- --&gt;</p>
+<!-- ---
+title:
+category: Machine learning
+  - 
+tags:
+  - 
+date:
+top: 1
+--- -->
 <h1 id="support-vector-machine">Support Vector Machine</h1>
 <h2 id="前言">前言</h2>
 <p>SVM是一种非常重要的机器学习分类算法，在DeepLearning普及之前占据着分类算法主导地位，放在今天仍然有很多场景会用到SVM，这篇文章将详细讲解SVM，文末会有Matlab的SVM实现源码，方便读者理解其具体实现。</p>
@@ -267,7 +285,7 @@ title: SVM
 <p><em>4. Geometric margin <span class="math inline">\(\gamma^{f}\)</span> of a training set <span class="math inline">\(S\)</span></em> 定义为数据集<span class="math inline">\(S\)</span>中最小的<span class="math inline">\({\gamma_{i}^{f}}\)</span>: <span class="math display">\[\gamma^{g}=\min _{1 \leq i \leq N}\left\{\gamma_{i}^{g}\right\}
 \]</span></p>
 <p>未完待续</p>
--->
+
         </div>
 
         <blockquote class="post-copyright">
@@ -275,7 +293,7 @@ title: SVM
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-01-09T05:16:54.006Z" itemprop="dateUpdated">2020-01-09 13:16:54</time>
+    最后更新时间：<time datetime="2020-01-09T06:43:34.784Z" itemprop="dateUpdated">2020-01-09 14:43:34</time>
 </span><br>
 
 
@@ -399,7 +417,7 @@ title: SVM
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        感谢支持！
+        Thank you！
         <i class="icon icon-quote-right"></i>
     </h3>
     <div class="reward-content">
@@ -462,7 +480,7 @@ title: SVM
                 
                         Power by
                         <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
-                        <a href="https://github.com/abelsu7/hexo-theme-indigo-plus" target="_blank">indigo plus</a>
+                        <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">Indigo</a>
                         <p>Hosted by <a href="https://pages.github.com" target="_blank" style="font-weight: bold">Github Pages</a></p>
             </span>
         </p>
