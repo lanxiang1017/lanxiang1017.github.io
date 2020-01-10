@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lanxplanet.com/"/>
-  <updated>2020-01-10T15:09:36.851Z</updated>
+  <updated>2020-01-10T15:19:34.382Z</updated>
   <id>http://lanxplanet.com/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Why should we writing</title>
-    <link href="http://lanxplanet.com/2020/01/10/Writing/"/>
-    <id>http://lanxplanet.com/2020/01/10/Writing/</id>
-    <published>2020-01-10T14:59:19.588Z</published>
-    <updated>2020-01-10T15:09:36.851Z</updated>
-    
-    <content type="html"><![CDATA[<p>Today, in the first group meeting in 2020, my supervisor shared two books he is reading, one book is &lt; zero to one &gt;, which gives some notes for startups to build a better future, one idea in this book on how to realize 0 to 1 is  “stop and thinking”, quite straightforward right? But how many of us can “stop and thinking” regularly? In most situation, let’s say, when doing research, initially we have ideas, then we start coding, debugging, coding, debugging… and repeating this loop until we forget what we are doing and what is the idea, we need insert a break to this loop and spend some time in thinking, what to think about depends on what you are doing, for example, if you are doing machine learning tasks, you need ask yourself questions like what is the distribution of the data looks like? how should I select features? what model is suitable for this case? how to score the model performance? … and a bunch of questions you will need ask yourself, instead of coding, debugging, and read paper all the time, sometimes stop may give you a clearer thinking, and I do feel the difference. </p><p>For me, I chose to write blogs to record my ideas, thinking, share my understanding and organize my knowledge, writing is a good way to have a break in what you are doing, and gives you a better perspective on your work.</p><p>So just keep writing and feel the difference.</p><p>Good night.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Today, in the first group meeting in 2020, my supervisor shared two books he is reading, one book is &amp;lt; zero to one &amp;gt;, which gives s
-      
-    
-    </summary>
-    
-    
-      <category term="talk_talk" scheme="http://lanxplanet.com/categories/talk-talk/"/>
-    
-    
-      <category term="talk" scheme="http://lanxplanet.com/tags/talk/"/>
-    
-  </entry>
   
   <entry>
     <title>SVM</title>
