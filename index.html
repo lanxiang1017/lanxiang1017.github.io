@@ -185,8 +185,8 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h1 id="Support-Vector-Machine"><a href="#Support-Vector-Machine" class="headerlink" title="Support Vector Machine"></a>Support Vector Machine</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Support Vector Machine is a very famous classification algorithm (can be used in regression challenges as well) in Machine Learning, which occupied the dominant position of classification algorithms before Deep Learning. There are still many cases where SVM will be used.</p>
-<p>This article will explain SVM in detail, and in the end I will show the Matlab codes for implementing different SVM, which can help you to have a deeper understanding on how SVM works.</p>
+        <h1 id="Support-Vector-Machine"><a href="#Support-Vector-Machine" class="headerlink" title="Support Vector Machine"></a>Support Vector Machine</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Support Vector Machine is a very famous classification algorithm ( can be used in regression challenges as well ) in Machine Learning, which occupied the dominant position of classification algorithms before Deep Learning. Even today, there are still many cases where SVM will be used.</p>
+<p>This article will explain SVM in detail, and in the end I will show the MATLAB codes for implementing different SVMs, which can help you to have a deeper understanding on how SVM works.</p>
 <h2 id="What-is-SVM"><a href="#What-is-SVM" class="headerlink" title="What is SVM"></a>What is SVM</h2><p>SVM is a kind of supervised machine learning algorithm, which usually used for two-classes classification.</p>
 <p>There are 6 key parts in SVM:  </p>
 <ul>
@@ -197,7 +197,7 @@
 <li>Soft Margin</li>
 <li>Kernel</li>
 </ul>
-<p>Before we go into detail, let’s start with figuring out what exactly SVM is doing.</p>
+<p>Before we go into details, let’s start with figuring out what exactly SVM is doing.</p>
 <p>Let’s consider a scenario, ChewChew needs to apply for a loan from the bank to buy a house. The bank needs to decide whether to approve ChewChew’s application. </p>
 <p>Usually, the bank decided by age-income, and the bank had the following historical data:</p>
 <p align="center">
@@ -222,16 +222,16 @@
 {+1} & {\text { if }} & {g\left(\mathbf{x}_{i}\right)>0} \\
 {-1} & {\text { if }} & {g\left(\mathbf{x}_{i}\right)<0}
 \end{array}\right.
-\end{equation}</script><p>If the Hyperplane classify a given data correctly，then we have:</p>
+\end{equation}</script><p>If the Hyperplane classify a given data correctll, we have:</p>
 <script type="math/tex; mode=display">\operatorname{sgn}\left[g\left(\mathbf{x}_{i}\right)\right]=d_{i} \quad \text { or } \quad \operatorname{sgn}\left[d_{i} g\left(\mathbf{x}_{i}\right)\right]=1</script><p><strong>Now comes the problem, is there only one Hyperplane?</strong></p>
 <p>Obviously the answer is no, since the Hyperplane will directly affect ChewChew’s loan, so the “quality” of the Hyperplane is quite important.</p>
 <p align="center">
   <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm4.png">
 </p>
 
-<p><strong>How can we find the optimal Hyperplane?</strong><br>This is exactly what SVM is doing, in general, SVM provides a systematic way to divide data optimal.</p>
+<p><strong>How can we find the optimal Hyperplane?</strong><br>This is exactly the problem that SVM is solving, in general, SVM provides a systematic way to divide data optimal.</p>
 <p><strong>How we define the “Optimal” Hyperplane?</strong><br>To answer this question, we need to understand what is “Margin”. </p>
-<h2 id="Margins"><a href="#Margins" class="headerlink" title="Margins"></a>Margins</h2><p>Margin，the gap that seperate two classes of data，which is the key concept in SVM。</p>
+<h2 id="Margins"><a href="#Margins" class="headerlink" title="Margins"></a>Margins</h2><p>Margin, the gap that separate two classes of data, is the key concept in SVM。</p>
 <p>In general, there are three kinds of Margin：</p>
 <ul>
 <li>Functional Margin</li>
@@ -250,7 +250,7 @@
 <p>For a given Hyperplane $(\mathbf{w}, b)$：</p>
 <p><em>1. Functional Margin $\gamma_{i}^{f}$ of an example $\mathbf({x_i, d_i})$</em></p>
 <script type="math/tex; mode=display">\gamma_{i}^{f}=d_{i}\left(\mathbf{w}^{T} \mathbf{x}_{i}+b\right)</script><p><em>2. Geometric margin $\gamma_{i}^{g}$ of an example $\mathbf({x_i, d_i})$</em></p>
-<script type="math/tex; mode=display">\gamma_{i}^{g}=d_{i}\left(\frac{1}{\|\mathbf{w}\|} \mathbf{w}^{T} \mathbf{x}_{i}+\frac{1}{\|\mathbf{w}\|} b\right)</script><p>We can prove that the physical meaning of $\gamma_{i}^{g} is the Euclidean distance from ${x_i}$ to our Hyperplane, the mathematical proof will attached in reference later, now we focus on their meaning.</p>
+<script type="math/tex; mode=display">\gamma_{i}^{g}=d_{i}\left(\frac{1}{\|\mathbf{w}\|} \mathbf{w}^{T} \mathbf{x}_{i}+\frac{1}{\|\mathbf{w}\|} b\right)</script><p>We can prove that the physical meaning of $\gamma_{i}^{g}$ is the Euclidean distance from ${x_i}$ to our Hyperplane, the mathematical proof will attached in reference later, now we focus on meaning of Margin.</p>
 <p align="center">
   <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 </p>
