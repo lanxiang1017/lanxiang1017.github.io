@@ -21,20 +21,21 @@
     
     
     <meta name="keywords" content="time-series">
-    <meta name="description" content="Introduction This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).">
+    <meta name="description" content="This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Time Series Forcasting with TCN">
 <meta property="og:url" content="http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/index.html">
 <meta property="og:site_name" content="Lanx Planet">
-<meta property="og:description" content="Introduction This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).">
+<meta property="og:description" content="This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
+<meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn_structure.png">
 <meta property="article:published_time" content="2020-07-13T03:17:18.498Z">
-<meta property="article:modified_time" content="2020-08-29T13:14:53.581Z">
+<meta property="article:modified_time" content="2020-08-29T13:26:41.629Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="time-series">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
+<meta name="twitter:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
     
         <link rel="alternate" type="application/atom+xml" title="Lanx Planet" href="/atom.xml">
     
@@ -170,7 +171,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Introduction"><span class="post-toc-text">Introduction</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Multivariates-time-series"><span class="post-toc-text">Multivariates time series</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Temporal-Convolutional-Networks-TCNs"><span class="post-toc-text">Temporal Convolutional Networks (TCNs)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What-is-TCN"><span class="post-toc-text">What is TCN?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Why-using-TCN"><span class="post-toc-text">Why using TCN?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Implement-TCN-for-time-series-forecasting-tasks-in-PyTorch"><span class="post-toc-text">Implement TCN for time-series forecasting tasks in PyTorch</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Data-preparation"><span class="post-toc-text">Data preparation</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Implementation-details"><span class="post-toc-text">Implementation details</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Reference"><span class="post-toc-text">Reference</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Multivariates-time-series"><span class="post-toc-text">Multivariates time series</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Temporal-Convolutional-Networks-TCNs"><span class="post-toc-text">Temporal Convolutional Networks (TCNs)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What-is-TCN"><span class="post-toc-text">What is TCN?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Why-using-TCN"><span class="post-toc-text">Why using TCN?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Implement-TCN-for-time-series-forecasting-tasks-in-PyTorch"><span class="post-toc-text">Implement TCN for time-series forecasting tasks in PyTorch</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Data-preparation"><span class="post-toc-text">Data preparation</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Implementation-details"><span class="post-toc-text">Implementation details</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Reference"><span class="post-toc-text">Reference</span></a></li></ol>
         </nav>
     </aside>
 
@@ -197,11 +198,11 @@
             
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><blockquote>
+            <blockquote>
 <p><em>This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).</em></p>
 </blockquote>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
+  <img width="800" height="300" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
 </p>
 
 <a id="more"></a>
@@ -254,7 +255,11 @@
 </tbody>
 </table>
 </div>
-<h2 id="Temporal-Convolutional-Networks-TCNs"><a href="#Temporal-Convolutional-Networks-TCNs" class="headerlink" title="Temporal Convolutional Networks (TCNs)"></a>Temporal Convolutional Networks (TCNs)</h2><h3 id="What-is-TCN"><a href="#What-is-TCN" class="headerlink" title="What is TCN?"></a>What is TCN?</h3><ul>
+<h2 id="Temporal-Convolutional-Networks-TCNs"><a href="#Temporal-Convolutional-Networks-TCNs" class="headerlink" title="Temporal Convolutional Networks (TCNs)"></a>Temporal Convolutional Networks (TCNs)</h2><p align="center">
+  <img width="800" height="160" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn_structure.png">
+</p>
+
+<h3 id="What-is-TCN"><a href="#What-is-TCN" class="headerlink" title="What is TCN?"></a>What is TCN?</h3><ul>
 <li><p><strong>1D fully-convolutional network(FCN):</strong></p>
 <p>  The FCN is widely used in semantic segmentation tasks, 1D FCN have a structure where each hidden layer is the same size as the input layer. Hence, the model is able to handle the sequence-to-sequence tasks.</p>
 </li>
@@ -444,7 +449,7 @@ class TCNs(nn.Module):
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-29T13:14:53.581Z" itemprop="dateUpdated">2020-08-29 21:14:53</time>
+    Last updated: <time datetime="2020-08-29T13:26:41.629Z" itemprop="dateUpdated">2020-08-29 21:26:41</time>
 </span><br>
 
 
@@ -490,8 +495,8 @@ class TCNs(nn.Module):
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/&title=《Time Series Forcasting with TCN》 — Lanx Planet&source=Introduction
-This post introduce multi-variates time-series forecasting using..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/&title=《Time Series Forcasting with TCN》 — Lanx Planet&source=
+This post introduce multi-variates time-series forecasting using Temporal Co..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -680,8 +685,8 @@ This post introduce multi-variates time-series forecasting using..." data-title=
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/&title=《Time Series Forcasting with TCN》 — Lanx Planet&source=Introduction
-This post introduce multi-variates time-series forecasting using..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/&title=《Time Series Forcasting with TCN》 — Lanx Planet&source=
+This post introduce multi-variates time-series forecasting using Temporal Co..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
