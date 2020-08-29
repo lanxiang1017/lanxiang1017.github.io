@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn_structure.png">
 <meta property="article:published_time" content="2020-07-13T03:17:18.498Z">
-<meta property="article:modified_time" content="2020-08-29T13:26:41.629Z">
+<meta property="article:modified_time" content="2020-08-29T13:43:22.299Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="time-series">
 <meta name="twitter:card" content="summary">
@@ -171,7 +171,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Multivariates-time-series"><span class="post-toc-text">Multivariates time series</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Temporal-Convolutional-Networks-TCNs"><span class="post-toc-text">Temporal Convolutional Networks (TCNs)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What-is-TCN"><span class="post-toc-text">What is TCN?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Why-using-TCN"><span class="post-toc-text">Why using TCN?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Implement-TCN-for-time-series-forecasting-tasks-in-PyTorch"><span class="post-toc-text">Implement TCN for time-series forecasting tasks in PyTorch</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Data-preparation"><span class="post-toc-text">Data preparation</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Implementation-details"><span class="post-toc-text">Implementation details</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Reference"><span class="post-toc-text">Reference</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Multivariates-time-series"><span class="post-toc-text">Multivariates time series</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Temporal-Convolutional-Networks-TCNs"><span class="post-toc-text">Temporal Convolutional Networks (TCNs)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#What-is-TCN"><span class="post-toc-text">What is TCN?</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Why-using-TCN"><span class="post-toc-text">Why using TCN?</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Implement-TCN-for-time-series-forecasting-tasks-in-PyTorch"><span class="post-toc-text">Implement TCN for time-series forecasting tasks in PyTorch</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Data-preparation"><span class="post-toc-text">Data preparation</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Implementation"><span class="post-toc-text">Implementation</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Reference"><span class="post-toc-text">Reference</span></a></li></ol>
         </nav>
     </aside>
 
@@ -202,7 +202,7 @@
 <p><em>This post introduce multi-variates time-series forecasting using Temporal Convolutional Networks (TCNs).</em></p>
 </blockquote>
 <p align="center">
-  <img width="800" height="300" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
+  <img src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/07/13/Time-Series-Forcasting-with-TCN/tcn.png">
 </p>
 
 <a id="more"></a>
@@ -272,17 +272,13 @@
 <li><p><strong>Flexible receptive field size and variable length inputs</strong></p>
 <p> The receptive field size of a TCN can be changed in multiple ways:</p>
 <ul>
-<li><p>making network deeper by stacking more dilated (causal) convolutional layers</p>
-</li>
-<li><p>using larger dilation factors </p>
-</li>
-<li><p>increasing the filter size. </p>
+<li>making network deeper by stacking more dilated (causal) convolutional layers</li>
+<li>using larger dilation factors</li>
+<li><p>increasing the filter size</p>
+<p>TCNs thus afford better control of the model’s memory size, and are easy to adapt to different domains.</p>
 </li>
 </ul>
 </li>
-</ol>
-<p>TCNs thus afford better control of the model’s memory size, and are easy to adapt to different domains.</p>
-<ol>
 <li><p><strong>Parallel computations</strong></p>
 <p> Unlike conventional RNNs, where the predictions for next timesteps must wait for the previous timesteps to complete, convolutions can be done in parallel since the same filter is used in each layer. Therefore, in both training and evaluation, a long input sequence can be processed as a whole in TCN, instead of sequentially as in RNN.</p>
 </li>
@@ -341,7 +337,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="Implementation-details"><a href="#Implementation-details" class="headerlink" title="Implementation details"></a>Implementation details</h3><blockquote>
+<h3 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h3><blockquote>
 <p>Reference: <a href="https://github.com/locuslab/TCN" target="_blank" rel="noopener">https://github.com/locuslab/TCN</a> </p>
 </blockquote>
 <pre><code class="lang-python">import torch
@@ -449,7 +445,7 @@ class TCNs(nn.Module):
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-29T13:26:41.629Z" itemprop="dateUpdated">2020-08-29 21:26:41</time>
+    Last updated: <time datetime="2020-08-29T13:43:22.299Z" itemprop="dateUpdated">2020-08-29 21:43:22</time>
 </span><br>
 
 

@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
 <meta property="og:image" content="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm7.png">
 <meta property="article:published_time" content="2020-01-08T02:31:16.000Z">
-<meta property="article:modified_time" content="2020-08-29T13:16:35.319Z">
+<meta property="article:modified_time" content="2020-08-29T13:35:52.734Z">
 <meta property="article:author" content="Lan Xiang">
 <meta property="article:tag" content="svm">
 <meta name="twitter:card" content="summary">
@@ -207,7 +207,7 @@
 <p><em>An throughout introduction to Support Vector Machine.</em></p>
 </blockquote>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm4.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm4.png">
 </p>
 
 <a id="more"></a>
@@ -227,13 +227,13 @@
 <p>Let’s consider a scenario, ChewChew needs to apply for a loan from the bank to buy a house. The bank needs to decide whether to approve ChewChew’s application.</p>
 <p>Usually, the bank decided by age-income, and the bank had the following historical data:</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm1.png">
 </p>
 
 <p>What should bank do if they want make the decision based on historical data?</p>
 <p>We may naturally want to draw a line to divide the historical data into two parts, if ChewChew drop in the upper half part, then approve his application, else rejection.</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm3.png">
 </p>
 
 
@@ -252,7 +252,7 @@
 <script type="math/tex; mode=display">\operatorname{sgn}\left[g\left(\mathbf{x}_{i}\right)\right]=d_{i} \quad \text { or } \quad \operatorname{sgn}\left[d_{i} g\left(\mathbf{x}_{i}\right)\right]=1</script><p><strong>Now comes the problem, is there only one Hyperplane?</strong></p>
 <p>Obviously the answer is no, since the Hyperplane will directly affect ChewChew’s loan, so the “quality” of the Hyperplane is quite important.</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm4.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm4.png">
 </p>
 
 <p><strong>How can we find the optimal Hyperplane?</strong><br>This is exactly the problem that SVM is solving, in general, SVM provides a systematic way to divide data optimal.</p>
@@ -278,7 +278,7 @@
 <script type="math/tex; mode=display">\gamma_{i}^{f}=d_{i}\left(\mathbf{w}^{T} \mathbf{x}_{i}+b\right)</script><p><em>2. Geometric margin $\gamma_{i}^{g}$ of an example $\mathbf({x_i, d_i})$</em></p>
 <script type="math/tex; mode=display">\gamma_{i}^{g}=d_{i}\left(\frac{1}{\|\mathbf{w}\|} \mathbf{w}^{T} \mathbf{x}_{i}+\frac{1}{\|\mathbf{w}\|} b\right)</script><p>We can prove that the physical meaning of $\gamma_{i}^{g}$ is the Euclidean distance from ${x_i}$ to our Hyperplane, the mathematical proof will attached in reference later, now we focus on meaning of Margin.</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm5.png">
 </p>
 
 <p>According to the mathematical definition，we can found that the relation between $\gamma_{i}^{f}$ and $\gamma_{i}^{g}$：</p>
@@ -291,7 +291,7 @@
 \gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {All possible Hyperplane }}</script><p>For example, assume we have a dataset $S$, in order to get Margin for $S$, we need to know all the Geometric margin of $S$ under all possible hyperplane:</p>
 <p>Step 1. For Hyperplane 1 $\left(\mathbf{w}_{1}, b_{1}\right)$，calculate $\gamma_{i}^{g}$ for all data points：</p>
 <p align="center">
-  <img width="400" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
+  <img width="70%" height="70%" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm6.png">
 </p>
 
 <script type="math/tex; mode=display">
@@ -302,7 +302,7 @@
 <script type="math/tex; mode=display">
 \gamma=\max \{\underbrace{\left.\gamma_{\left(\mathbf{w}_{1}, b_{1}\right)}^{g}, \gamma_{\left(\mathbf{w}_{2}, b_{2}\right)}^{g}, \gamma_{\left(\mathbf{w}_{3}, b_{3}\right)}^{g}, \ldots\right\}}_{\text {all possible Hyperplane}}</script><p>Shown as follow:</p>
 <p align="center">
-  <img width="600" height="400" src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm7.png">
+  <img src="https://github.com/lanxiang1017/lanxiang1017.github.io/raw/master/2020/01/08/SVM/svm7.png">
 </p>
 
 
@@ -351,7 +351,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-29T13:16:35.319Z" itemprop="dateUpdated">2020-08-29 21:16:35</time>
+    Last updated: <time datetime="2020-08-29T13:35:52.734Z" itemprop="dateUpdated">2020-08-29 21:35:52</time>
 </span><br>
 
 
