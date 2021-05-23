@@ -72,7 +72,7 @@
       <ul class="nav">
         
             <li class="waves-block waves-effect">
-              <a href="/"  >
+              <a href="/about/"  >
                 <i class="icon icon-lg icon-home"></i>
                 Homepage
               </a>
@@ -80,22 +80,8 @@
         
             <li class="waves-block waves-effect">
               <a href="/archives/"  >
-                <i class="icon icon-lg icon-archives"></i>
-                Archives
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories/"  >
-                <i class="icon icon-lg icon-th-list"></i>
-                Categories
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags/"  >
-                <i class="icon icon-lg icon-tags"></i>
-                Tags
+                <i class="icon icon-lg icon-book"></i>
+                Blogs
               </a>
             </li>
         
@@ -103,13 +89,6 @@
               <a href="https://github.com/lanxiang1017" target="_blank" rel="noopener"  >
                 <i class="icon icon-lg icon-github"></i>
                 Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/about/"  >
-                <i class="icon icon-lg icon-info-circle"></i>
-                About me
               </a>
             </li>
         
@@ -451,8 +430,6 @@ class TCNs(nn.Module):
 
 
         
-        文章发布地址：<a href="/2020/07/13/Time-Series-Forcasting-with-TCN/" target="_blank" rel="external">http://lanxplanet.com/2020/07/13/Time-Series-Forcasting-with-TCN/</a>
-        
     </div>
     
     <footer>
@@ -464,10 +441,6 @@ class TCNs(nn.Module):
 </blockquote>
 
         
-<div class="page-reward">
-    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
-</div>
-
 
 
         <div class="post-footer">
@@ -550,58 +523,9 @@ This post introduce multi-variates time-series forecasting using Temporal Co..."
 
 
 
-    <section class="comments" id="comments">
-        <div id="gitalk-container"></div>
-        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-        <script>
-            var id = location.pathname
-            if (location.pathname.length > 50) {
-              id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
-            }
-            const gitalk = new Gitalk({
-              clientID: 'f8ae2e00ed0cdb993ca9',
-              clientSecret: 'e44c66edd99dfda9b70cf0c93afcf615372d75e7',
-              repo: 'lanxiang1017.github.io',
-              owner: 'lanxiang1017',
-              admin: ['lanxiang1017'],
-              id: id,      // Ensure uniqueness and length less than 50
-              title: document.title.split('|')[0],
-              distractionFreeMode: false  // Facebook-like distraction free mode
-            })
-            gitalk.render('gitalk-container')
-        </script>
-    </section>
-
 
 
 </article>
-
-<div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        Thank you！
-        <i class="icon icon-quote-right"></i>
-    </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/img/weixin.jpg" alt="打赏二维码">
-        </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/weixin.jpg" data-alipay="/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-item switch">切换</span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
-        
-    </div>
-</div>
 
 
 
@@ -706,7 +630,7 @@ This post introduce multi-variates time-series forecasting using Temporal Co..."
 
     <script src="//cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 </script>
