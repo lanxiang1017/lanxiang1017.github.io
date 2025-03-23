@@ -1,0 +1,198 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
+# Profile
+I am a Ph.D Candidate at National University of Singapore (NUS), working with [<span style="color:#3f51b5">Prof. Feng Mengling</span>](https://www.mornin-feng.com/). Before Ph.D, I graduated from NUS with a master's degree in electrical & computer engineering and did my research intern at IBM Research. 
+
+<span style="color:#3f51b5"> **Research Interests:**</span>  My research focuses on designing and applying AI models to address real-world healthcare challenges, with a long-term goal of building expert-level multimodal generalists to enhance clinical decision-making and patient care. My recent work concentrates on advancing multimodal large language models, leveraging their remarkable capacity for synergizing diverse modalities for reasoning and planning. Previously, I worked a lot on self-supervised learning models to improve label efficiency in the medical domain. I am also interested in time series modeling, and much of my work has involved time series data, as it is one of the most prevalent modalities in healthcare.
+
+# 🔥 News
+<!-- 2025 -->
+- **[03. 2025]** Our paper on empowering MLLM for grounded ECG understanding now available at [arXiv](https://arxiv.org/pdf/2503.06073).
+<!-- 2024 -->
+<!-- - **[08. 2024]** Our survey paper on language modeling for tabular data now available at [arXiv](https://arxiv.org/pdf/2408.10548).  -->
+- **[06. 2024]** Our paper on multi-stage contrastive learning is accepted in [ECCV 2024](https://eccv2024.ecva.net).
+- **[06. 2024]** I was awarded for the Graduate Student Research Award AY2023/2024!
+- **[01. 2024]** Our paper on contrastive learning for time series applications is accepted in [ICLR 2024](https://openreview.net/pdf?id=K2c04ulKXn).
+<!-- 2023 -->
+<!-- - **[12. 2023]** I will serve as the student organizer of the Health Day Event at The WEB Conference [WWW](https://www2024.thewebconf.org/calls/health-day/).  -->
+<!-- - **[11. 2023]** Our paper on building a large-scale real-wold surgery database now available at [KJA](https://europepmc.org/article/med/37935575). -->
+- **[10. 2023]** Our survey on LLM for healthcare applications is accepted in [Information Fusion](https://www.sciencedirect.com/science/article/pii/S1566253525000363).
+<!-- - **[01. 2023]** Our paper on predicting surgical duration now available at [arXiv](https://arxiv.org/pdf/2303.17408.pdf). -->
+<!-- 2022 -->
+<!-- - **[05. 2022]** Our paper about federated learning on electronic health records is accepted in [TIST](https://dl.acm.org/doi/abs/10.1145/3514500).  -->
+<!-- 2021 -->
+
+- **[5. 2022]** Our paper about self-supervised learning for ECG is accepted in [AAAI 2022](https://ojs.aaai.org/index.php/AAAI/article/view/20376).
+
+<!-- - **[06. 2021]** Our paper about multivariate ECG time series classification is accepted in [PMEA](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6). -->
+<!-- - **[04. 2021]** Our paper about domain adaptation for time series is accepted in [IJCNN 2021](https://www.ijcnn.org/).  -->
+<!-- 2020 -->
+<!-- - **[12. 2020]** Our team won the Championship in [SG Healthcare AI Datathon 2020](https://www.nus-datathon.com/2020).
+- **[09. 2020]** Our team won the 2nd Runner-up in [PhysioNet/Computing in Cardiology Challenge 2020](https://physionetchallenges.org/2020/).
+- **[01. 2020]** Join [NUS Healthcare-AI Lab](https://www.mornin-feng.com/). -->
+<!-- 2019 -->
+<!-- - **[07. 2019]** Conferred master's degree by NUS. -->
+<!-- - **[05. 2019]** Start internship at IBM Research. -->
+
+
+# 📝 Publications
+
+<!-- GEM -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint 2025</div><img src='images/gem_arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GEM: Empowering MLLM for Grounded ECG Understanding with Time Series and Images](https://arxiv.org/pdf/2503.06073)
+
+<span style="color:#3f51b5">**Xiang Lan**</span>,  Feng Wu, Kai He, Qinghao Zhao, Shenda Hong, Mengling Feng 
+
+[**Project Contributions**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=09Qb5fUAAAAJ&citation_for_view=09Qb5fUAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First Unified Multimodal ECG Model.
+- First High-granularity ECG Grounding Dataset.
+- Clinically Oriented Diagnostic System.
+  
+[[Page](https://www.lanxplanet.com/GEM-ECG/)][[Code](https://github.com/lanxiang1017/GEM)]
+
+</div>
+</div>
+
+
+<!-- DBPM -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024</div><img src='images/dbpm_arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Enhancing Time Series Contrastive Learning: A Dynamic Bad Pair Mining Approach](https://openreview.net/pdf?id=K2c04ulKXn)
+
+<span style="color:#3f51b5">**Xiang Lan**</span>, Hanshu Yan, Shenda Hong, Mengling Feng
+
+[**Project Contributions**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=09Qb5fUAAAAJ&citation_for_view=09Qb5fUAAAAJ:YsMSGLbcyi4C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First study to investigate the bad positive pair problem exists in time series contrastive learning.
+- A simple yet effective algorithm designed as a lightweight plug-in.
+- Enhancing the performance of existing state-of-the-art methods.
+
+[[Paper](https://openreview.net/pdf?id=K2c04ulKXn)][[Code](https://github.com/lanxiang1017/DynamicBadPairMining_ICLR24)]
+
+</div>
+</div>
+
+
+
+<!-- MCL -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='images/mcl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Learning the Unlearned: Mitigating Feature Suppression in Contrastive Learning](https://arxiv.org/abs/2402.11816)
+
+Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu Cheng, Mengling Feng, Bryan Hooi \\
+<span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+[**Project Contributions**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=09Qb5fUAAAAJ&citation_for_view=09Qb5fUAAAAJ:eQOLeE2rZwMC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First multistage contrastive learning framework.
+- First work to discuss and address feature suppression in both unimodal and multimodal contrastive learning.
+- Adaptable to various contrastive learning settings.
+
+[[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10882.pdf)][[Code](https://github.com/MajorDavidZhang/MCL)]
+
+</div>
+</div>
+
+
+<!-- ISL -->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2022</div><img src='images/isl_arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Intra-Inter Subject Self-Supervised Learning for Multivariate Cardiac Signals](https://ojs.aaai.org/index.php/AAAI/article/view/20376)
+
+<span style="color:#3f51b5">**Xiang Lan**</span>, Dianwen Ng, Shenda Hong, Mengling Feng
+
+[**Project Contributions**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=09Qb5fUAAAAJ&citation_for_view=09Qb5fUAAAAJ:YsMSGLbcyi4C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First work that integrates medical knowledge into self-supervision to boost the performance of cardiac arrhythmias diagnosis.
+- Novel intra and inter subject self-supervision mechanism.
+- State-of-the-art performance.
+
+[[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/20376)][[Code](https://github.com/nus-mornin-lab/aaai_inter_intra_constrastive)]
+
+</div>
+</div>
+
+
+- [A Survey of Large Language Models for Healthcare: from Data, Technology, and Applications to Accountability and Ethics](https://www.sciencedirect.com/science/article/pii/S1566253525000363)
+  
+  Kai He, Rui Mao, Qika Lin, Yucheng Ruan, <span style="color:#3f51b5">**Xiang Lan**</span>, Mengling Feng, Erik Cambria
+
+  ``Information Fusion``
+
+- [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575)
+  
+  Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jingying Ma, Yizhi Dong, Kai He, Mengling Feng
+
+  ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+- [The SingHealth Perioperative and Anesthesia Subject Area Registry (PASAR), a large-scale perioperative data mart and registry](https://europepmc.org/article/med/37935575)
+
+  Hairil Rizal Abdullah, Daniel Yan Zheng Lim, Yuhe Ke, Nur Nasyitah Mohamed Salim, <span style="color:#3f51b5">**Xiang Lan**</span>, Yizhi Dong, Mengling Feng
+
+  ``Korean Journal of Anesthesiology``
+
+
+- [Medical Intervention Duration Estimation Using Language-enhanced Transformer Encoder with Medical Prompts](https://arxiv.org/pdf/2303.17408.pdf)
+  
+  Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Daniel J Tan, Hairil Rizal Abdullah, Mengling Feng
+
+  ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+- [Federated Learning for Electronic Health Records](https://dl.acm.org/doi/abs/10.1145/3514500)
+  
+  Trung Kien Dang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jianshu Weng, Mengling Feng
+
+  ``ACM Transactions on Intelligent Systems and Technology`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+- [Adversarial Domain Adaptation with Correlation-Based Association Networks for Longitudinal Disk Fault Prediction](https://ieeexplore.ieee.org/document/9533383)
+  
+  <span style="color:#3f51b5">**Xiang Lan\***</span>, Dianwen Ng\*, Yi Liu, Jiongzhou Liu, Fan Xu, Cheng He and Mengling Feng
+
+  ``IJCNN 2021``
+
+- [Identification of 27 abnormalities from multi-lead ECG signals: An ensembled SE ResNet framework with Sign Loss function](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6)
+  
+  Zhaowei Zhu\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Tingting Zhao, Yangming Guo, Pipin Kojodjojo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, Han Wang, Xingzhi Sun, Mengling Feng
+
+  ``Physiological Measurement`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+- [Federated learning: a collaborative effort to achieve better medical imaging models for individual sites that have small labelled datasets](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779924/)
+  
+  Dianwen Ng, <span style="color:#3f51b5">**Xiang Lan**</span>, Melissa Min-Szu Yao, Wing P. Chan and Mengling Feng
+
+  ``Quantitative Imaging in Medicine and Surgery``
+
+
+
+# 🎖 Honors and Awards
+- *2024* Graduate Student Research Award, NUS
+- *2020* Championship, SG Healthcare AI Datathon 2020 
+- *2020* 2nd Runner-up, PhysioNet/Computing in Cardiology Challenge 2020
+
+# 📖 Educations
+- *2021.07 - now*, Doctor of Philosophy, National University of Singapore. 
+- *2018.07 - 2019.06*, Master of Science, National University of Singapore.
+- *2014.07 - 2018.06*, Bachelor of Science, University of Electronic Science and Technology of China.
+
+
+# 🌍 Academic Services
+I serve as a reviewer for **ICLR, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science**.
