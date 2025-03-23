@@ -26,30 +26,14 @@ I am a Ph.D Candidate at National University of Singapore (NUS), working with [<
 <!-- 2025 -->
 - **[03. 2025]** Our paper on empowering MLLM for grounded ECG understanding now available at [arXiv](https://arxiv.org/pdf/2503.06073).
 <!-- 2024 -->
-<!-- - **[08. 2024]** Our survey paper on language modeling for tabular data now available at [arXiv](https://arxiv.org/pdf/2408.10548).  -->
 - **[06. 2024]** Our paper on multi-stage contrastive learning is accepted in [ECCV 2024](https://eccv2024.ecva.net).
 - **[06. 2024]** I was awarded for the Graduate Student Research Award AY2023/2024!
 - **[01. 2024]** Our paper on contrastive learning for time series applications is accepted in [ICLR 2024](https://openreview.net/pdf?id=K2c04ulKXn).
 <!-- 2023 -->
-<!-- - **[12. 2023]** I will serve as the student organizer of the Health Day Event at The WEB Conference [WWW](https://www2024.thewebconf.org/calls/health-day/).  -->
-<!-- - **[11. 2023]** Our paper on building a large-scale real-wold surgery database now available at [KJA](https://europepmc.org/article/med/37935575). -->
 - **[10. 2023]** Our survey on LLM for healthcare applications is accepted in [Information Fusion](https://www.sciencedirect.com/science/article/pii/S1566253525000363).
-<!-- - **[01. 2023]** Our paper on predicting surgical duration now available at [arXiv](https://arxiv.org/pdf/2303.17408.pdf). -->
 <!-- 2022 -->
-<!-- - **[05. 2022]** Our paper about federated learning on electronic health records is accepted in [TIST](https://dl.acm.org/doi/abs/10.1145/3514500).  -->
-<!-- 2021 -->
+- **[05. 2022]** Our paper about self-supervised learning for ECG is accepted in [AAAI 2022](https://ojs.aaai.org/index.php/AAAI/article/view/20376).
 
-- **[5. 2022]** Our paper about self-supervised learning for ECG is accepted in [AAAI 2022](https://ojs.aaai.org/index.php/AAAI/article/view/20376).
-
-<!-- - **[06. 2021]** Our paper about multivariate ECG time series classification is accepted in [PMEA](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6). -->
-<!-- - **[04. 2021]** Our paper about domain adaptation for time series is accepted in [IJCNN 2021](https://www.ijcnn.org/).  -->
-<!-- 2020 -->
-<!-- - **[12. 2020]** Our team won the Championship in [SG Healthcare AI Datathon 2020](https://www.nus-datathon.com/2020).
-- **[09. 2020]** Our team won the 2nd Runner-up in [PhysioNet/Computing in Cardiology Challenge 2020](https://physionetchallenges.org/2020/).
-- **[01. 2020]** Join [NUS Healthcare-AI Lab](https://www.mornin-feng.com/). -->
-<!-- 2019 -->
-<!-- - **[07. 2019]** Conferred master's degree by NUS. -->
-<!-- - **[05. 2019]** Start internship at IBM Research. -->
 
 
 # 📝 Publications
