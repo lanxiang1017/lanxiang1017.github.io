@@ -132,12 +132,6 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 </div>
 </div>
 
-- [Identification of 27 abnormalities from multi-lead ECG signals: An ensembled SE ResNet framework with Sign Loss function](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6) <a><img src='https://img.shields.io/badge/AI Cardiology-8A2BE2'></a>
-  
-  Zhaowei Zhu\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Tingting Zhao, Yangming Guo, Pipin Kojodjojo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, Han Wang, Xingzhi Sun, Mengling Feng
-
-  ``Physiological Measurement`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
-
 - [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jingying Ma, Yizhi Dong, Kai He, Mengling Feng
@@ -174,12 +168,23 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
   ``Quantitative Imaging in Medicine and Surgery``
 
+- [Identification of 27 abnormalities from multi-lead ECG signals: An ensembled SE ResNet framework with Sign Loss function](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6) <a><img src='https://img.shields.io/badge/AI Cardiology-8A2BE2'></a>
+  
+  Zhaowei Zhu\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Tingting Zhao, Yangming Guo, Pipin Kojodjojo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, Han Wang, Xingzhi Sun, Mengling Feng
+
+  ``Physiological Measurement`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
 - [Adversarial Domain Adaptation with Correlation-Based Association Networks for Longitudinal Disk Fault Prediction](https://ieeexplore.ieee.org/document/9533383) <a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a>
   
   <span style="color:#3f51b5">**Xiang Lan\***</span>, Dianwen Ng\*, Yi Liu, Jiongzhou Liu, Fan Xu, Cheng He and Mengling Feng
 
   ``IJCNN 2021``
 
+- [Classification of cardiac abnormalities from ECG signals using SE-ResNet](https://physionet.org/files/challenge-2020/1.0.1/papers/CinC2020-281.pdf) <a><img src='https://img.shields.io/badge/AI Cardiology-8A2BE2'></a>
+
+  Zhaowei Zhu, Han Wang, Tingting Zhao, Yangming Guo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xingzhi Sun, Mengling Feng
+
+  ``Computing in Cardiology 2020``
 
 # 🎖 Honors and Awards
 - *2024* Graduate Student Research Award, NUS
