@@ -132,7 +132,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 </div>
 </div>
 
-- [Medical Intervention Duration Estimation Using Language-enhanced Transformer Encoder with Medical Prompts](https://arxiv.org/pdf/2303.17408.pdf) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
+- [Medical Intervention Duration Estimation Using Language-enhanced Transformer Encoder with Medical Prompts](https://arxiv.org/pdf/2303.17408.pdf) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a> <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a>
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Daniel J Tan, Hairil Rizal Abdullah, Mengling Feng
 
