@@ -132,15 +132,15 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 </div>
 </div>
 
-- [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
-  
-  Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jingying Ma, Yizhi Dong, Kai He, Mengling Feng
-
-  ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
-
 - [Medical Intervention Duration Estimation Using Language-enhanced Transformer Encoder with Medical Prompts](https://arxiv.org/pdf/2303.17408.pdf) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Daniel J Tan, Hairil Rizal Abdullah, Mengling Feng
+
+  ``23rd Internation Conference on AI in Medicine (AIME 2025)`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+- [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
+  
+  Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jingying Ma, Yizhi Dong, Kai He, Mengling Feng
 
   ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
