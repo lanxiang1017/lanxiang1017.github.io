@@ -24,7 +24,7 @@ I am a Ph.D Candidate at National University of Singapore (NUS), advised by [<sp
 
 # 🔥 News
 <!-- 2025 -->
-- **[04. 2025]** Our paper on multimodal EHR modeling is accepted in [AIME 2025](https://arxiv.org/pdf/2303.17408.pdf)
+- **[04. 2025]** Our paper on multimodal EHR modeling is accepted in [AIME 2025](https://arxiv.org/pdf/2303.17408.pdf).
 - **[03. 2025]** Our paper on empowering MLLM for grounded ECG understanding now available at [arXiv](https://arxiv.org/pdf/2503.06073).
 <!-- 2024 -->
 - **[06. 2024]** Our paper on multi-stage contrastive learning is accepted in [ECCV 2024](https://eccv2024.ecva.net).
