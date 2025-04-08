@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # Profile
-I am a Ph.D. candidate at the National University of Singapore (NUS), advised by [<span style="color:#3f51b5">Prof Feng Mengling</span>](https://www.mornin-feng.com/), and working closely with [<span style="color:#3f51b5">Prof Hong Shenda</span>](https://hsd1503.github.io/) at Peking University and [<span style="color:#3f51b5">Prof Bryan Hooi</span>](https://bhooi.github.io/) at NUS. Before Ph.D, I graduated from NUS with a master's degree in electrical & computer engineering and did my research intern at IBM Research. 
+I am a Ph.D candidate at the National University of Singapore (NUS), advised by [<span style="color:#3f51b5">Prof Feng Mengling</span>](https://www.mornin-feng.com/), and working closely with [<span style="color:#3f51b5">Prof Hong Shenda</span>](https://hsd1503.github.io/) at Peking University and [<span style="color:#3f51b5">Prof Bryan Hooi</span>](https://bhooi.github.io/) at NUS. Before Ph.D, I graduated from NUS with a master's degree in electrical & computer engineering and did my research intern at IBM Research. 
 
 <span style="color:#3f51b5"> **Research Interests:**</span>  My research focuses on designing and applying AI models to address real-world healthcare challenges, with a long-term goal of building expert-level multimodal generalists to enhance clinical decision-making and patient care. My recent work concentrates on advancing multimodal large language models, leveraging their remarkable capacity for synergizing diverse modalities for reasoning and planning. Previously, I worked a lot on self-supervised learning models to improve label efficiency in the medical domain. I am also interested in time series modeling, and much of my work has involved time series data, as it is one of the most prevalent modalities in healthcare. I have published 10+ papers at the top international AI conferences and journals such as ICLR, ECCV, AAAI, Information Fusion, and TIST. 
 
@@ -199,4 +199,4 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 
 # 🌍 Academic Services
-I serve as a reviewer for **ICLR, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science**.
+I serve as a reviewer for **ICLR, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science, npj Digital Health**.
