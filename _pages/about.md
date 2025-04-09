@@ -183,7 +183,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 - [Classification of cardiac abnormalities from ECG signals using SE-ResNet](https://physionet.org/files/challenge-2020/1.0.1/papers/CinC2020-281.pdf) <a><img src='https://img.shields.io/badge/AI Cardiology-8A2BE2'></a>
 
-  Zhaowei Zhu, Han Wang, Tingting Zhao, Yangming Guo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xingzhi Sun, Mengling Feng
+  Zhaowei Zhu, Han Wang, Tingting Zhao, Yangming Guo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, <span style="color:#3f51b5">**Xiang Lan**</span>, Xingzhi Sun, Mengling Feng
 
   ``Computing in Cardiology 2020``
 
