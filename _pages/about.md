@@ -137,7 +137,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Daniel J Tan, Hairil Rizal Abdullah, Mengling Feng
 
-  ``23rd Internation Conference on AI in Medicine (AIME 2025)`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+  ``23rd International Conference on AI in Medicine (AIME 2025)`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
 - [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/AI EHR-A0DAA8'></a>
   
