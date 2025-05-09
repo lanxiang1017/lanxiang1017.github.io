@@ -199,4 +199,4 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 
 # 🌍 Academic Services
-I serve as a reviewer for **ICLR, NeurIPS, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science, npj Digital Health**.
+I serve as a reviewer for **ICLR, NeurIPS, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science, npj Digital Medicine**.
