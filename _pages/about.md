@@ -60,8 +60,8 @@ I am a Ph.D candidate at the National University of Singapore (NUS), advised by 
   
 [[Page](https://www.lanxplanet.com/GEM-ECG/)][[Code](https://github.com/lanxiang1017/GEM)]
 
-<a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a>
-<a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a>
+<!-- <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a> -->
+<!-- <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a> -->
 
 </div>
 </div>
@@ -82,7 +82,7 @@ I am a Ph.D candidate at the National University of Singapore (NUS), advised by 
 
 [[Paper](https://openreview.net/pdf?id=K2c04ulKXn)][[Code](https://github.com/lanxiang1017/DynamicBadPairMining_ICLR24)]
 
-<a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a>
+<!-- <a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a> -->
 
 </div>
 </div>
@@ -106,8 +106,8 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 [[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10882.pdf)][[Code](https://github.com/MajorDavidZhang/MCL)]
 
 
-<a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a>
-<a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a>
+<!-- <a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a> -->
+<!-- <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a> -->
 
 </div>
 </div>
@@ -128,60 +128,69 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/20376)][[Code](https://github.com/nus-mornin-lab/aaai_inter_intra_constrastive)]
 
-<a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a>
+<!-- <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a> -->
 
 </div>
 </div>
 
-- [P-Transformer: A Prompt-based Multimodal Transformer Architecture For Medical Tabular Data](https://arxiv.org/pdf/2303.17408.pdf) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a>
+- [P-Transformer: A Prompt-based Multimodal Transformer Architecture For Medical Tabular Data](https://arxiv.org/pdf/2303.17408.pdf) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a> -->
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Daniel J Tan, Hairil Rizal Abdullah, Mengling Feng
 
   ``23rd International Conference on AI in Medicine (AIME 2025)`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
-- [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a>
+- [Language Modeling on Tabular Data: A Survey of Foundations, Techniques and Evolution](https://europepmc.org/article/med/37935575) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
   Yucheng Ruan\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jingying Ma, Yizhi Dong, Kai He, Mengling Feng
 
   ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
-- [Federated Learning for Electronic Health Records](https://dl.acm.org/doi/abs/10.1145/3514500) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a>
+- [Federated Learning for Electronic Health Records](https://dl.acm.org/doi/abs/10.1145/3514500) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
   Trung Kien Dang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Jianshu Weng, Mengling Feng
 
   ``ACM Transactions on Intelligent Systems and Technology`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
-- [A Survey of Large Language Models for Healthcare: from Data, Technology, and Applications to Accountability and Ethics](https://www.sciencedirect.com/science/article/pii/S1566253525000363) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a>
+- [A Survey of Large Language Models for Healthcare: from Data, Technology, and Applications to Accountability and Ethics](https://www.sciencedirect.com/science/article/pii/S1566253525000363) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
   Kai He, Rui Mao, Qika Lin, Yucheng Ruan, <span style="color:#3f51b5">**Xiang Lan**</span>, Mengling Feng, Erik Cambria
 
   ``Information Fusion``
 
-- [The SingHealth Perioperative and Anesthesia Subject Area Registry (PASAR), a large-scale perioperative data mart and registry](https://europepmc.org/article/med/37935575) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a>
+- [The SingHealth Perioperative and Anesthesia Subject Area Registry (PASAR), a large-scale perioperative data mart and registry](https://europepmc.org/article/med/37935575) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
 
   Hairil Rizal Abdullah, Daniel Yan Zheng Lim, Yuhe Ke, Nur Nasyitah Mohamed Salim, <span style="color:#3f51b5">**Xiang Lan**</span>, Yizhi Dong, Mengling Feng
 
   ``Korean Journal of Anesthesiology``
 
-- [Federated learning: a collaborative effort to achieve better medical imaging models for individual sites that have small labelled datasets](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779924/) <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a>
+- [Federated learning: a collaborative effort to achieve better medical imaging models for individual sites that have small labelled datasets](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779924/) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
   Dianwen Ng, <span style="color:#3f51b5">**Xiang Lan**</span>, Melissa Min-Szu Yao, Wing P. Chan and Mengling Feng
 
   ``Quantitative Imaging in Medicine and Surgery``
 
-- [Identification of 27 abnormalities from multi-lead ECG signals: An ensembled SE ResNet framework with Sign Loss function](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6) <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a>
+- [Identification of 27 abnormalities from multi-lead ECG signals: An ensembled SE ResNet framework with Sign Loss function](https://iopscience.iop.org/article/10.1088/1361-6579/ac08e6) 
+<!-- - <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a> -->
   
   Zhaowei Zhu\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Tingting Zhao, Yangming Guo, Pipin Kojodjojo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, Han Wang, Xingzhi Sun, Mengling Feng
 
   ``Physiological Measurement`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
-- [Adversarial Domain Adaptation with Correlation-Based Association Networks for Longitudinal Disk Fault Prediction](https://ieeexplore.ieee.org/document/9533383) <a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a>
+- [Adversarial Domain Adaptation with Correlation-Based Association Networks for Longitudinal Disk Fault Prediction](https://ieeexplore.ieee.org/document/9533383) 
+<!-- - <a><img src='https://img.shields.io/badge/General Machine Learning-00A170'></a> -->
   
   <span style="color:#3f51b5">**Xiang Lan\***</span>, Dianwen Ng\*, Yi Liu, Jiongzhou Liu, Fan Xu, Cheng He and Mengling Feng
 
   ``IJCNN 2021``
 
-- [Classification of cardiac abnormalities from ECG signals using SE-ResNet](https://physionet.org/files/challenge-2020/1.0.1/papers/CinC2020-281.pdf) <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a>
+- [Classification of cardiac abnormalities from ECG signals using SE-ResNet](https://physionet.org/files/challenge-2020/1.0.1/papers/CinC2020-281.pdf) 
+<!-- - <a><img src='https://img.shields.io/badge/Cardiology-8A2BE2'></a> -->
 
   Zhaowei Zhu, Han Wang, Tingting Zhao, Yangming Guo, Zhuoyang Xu, Zhuo Liu, Siqi Liu, <span style="color:#3f51b5">**Xiang Lan**</span>, Xingzhi Sun, Mengling Feng
 
@@ -189,7 +198,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 # 🎖 Honors and Awards
 - *2024* Graduate Student Research Award, NUS
-- *2020* Championship, SG Healthcare AI Datathon 2020 
+- *2020* Championship, SG Healthcare Datathon 2020 
 - *2020* 2nd Runner-up, PhysioNet/Computing in Cardiology Challenge 2020
 
 # 📖 Educations
