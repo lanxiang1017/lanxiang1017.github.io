@@ -24,8 +24,8 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 # 🔥 News
 <!-- 2025 -->
+- **[09. 2025]** Our paper on empowering MLLM for grounded ECG understanding is accepted in [NeurIPS 2025](https://arxiv.org/pdf/2503.06073).
 - **[04. 2025]** Our paper on multimodal EHR modeling is accepted in [AIME 2025](https://arxiv.org/pdf/2303.17408.pdf).
-- **[03. 2025]** Our paper on empowering MLLM for grounded ECG understanding now available at [arXiv](https://arxiv.org/pdf/2503.06073).
 <!-- 2024 -->
 - **[06. 2024]** Our paper on multi-stage contrastive learning is accepted in [ECCV 2024](https://eccv2024.ecva.net).
 - **[06. 2024]** I was awarded for the Graduate Student Research Award AY2023/2024!
@@ -43,7 +43,7 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Preprint 2025</div>
+      <div class="badge">NeurIPS 2025</div>
       <img src='images/gem_arch.png' alt="sym" width="100%">
     </div>
   </div>
