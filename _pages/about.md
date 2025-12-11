@@ -202,7 +202,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 - *2020* 2nd Runner-up, PhysioNet/Computing in Cardiology Challenge 2020
 
 # 📖 Educations
-- *2021.07 - now*, Doctor of Philosophy, National University of Singapore. 
+- *2021.07 - 2025.07*, Doctor of Philosophy, National University of Singapore. 
 - *2018.07 - 2019.06*, Master of Science, National University of Singapore.
 - *2014.07 - 2018.06*, Bachelor of Science, University of Electronic Science and Technology of China.
 
