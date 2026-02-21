@@ -184,6 +184,13 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 </div>
 </div>
 
+- [MEETI: A Multimodal ECG Dataset from MIMIC-IV-ECG with Signals, Images, Features and Interpretations](https://arxiv.org/pdf/2507.15255) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
+  
+  Deyun Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Shijia Geng, Qinghao Zhao, Sumei Fan, Mengling Feng, Shenda Hong
+
+  ``preprint``
+
 - [Uniecg: Understanding and Generating ECG in One Unified Model](https://arxiv.org/pdf/2509.18588) 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
