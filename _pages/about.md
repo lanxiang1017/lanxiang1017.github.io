@@ -46,7 +46,7 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">preprint</div>
+      <div class="badge">Preprint 2026</div>
       <img src='images/r1-syn.png' alt="sym" width="100%">
     </div>
   </div>
@@ -70,7 +70,7 @@ Jingyi Zhang, Tianyi Lin, Huanjin Yao, <span style="color:#3f51b5">**Xiang Lan**
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">preprint</div>
+      <div class="badge">Preprint 2026</div>
       <img src='images/ecg-r1.png' alt="sym" width="100%">
     </div>
   </div>
@@ -187,9 +187,9 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 - [Uniecg: Understanding and Generating ECG in One Unified Model](https://arxiv.org/pdf/2509.18588) 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
   
-  Jiarui Jin, Haoyu Wang, Xiang Lan, Jun Li, Gaofeng Cheng, Hongyan Li, Shenda Hong
+  Jiarui Jin, Haoyu Wang, <span style="color:#3f51b5">**Xiang Lan**</span>, Jun Li, Gaofeng Cheng, Hongyan Li, Shenda Hong
 
-  ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+  ``preprint``
 
 - [P-Transformer: A Prompt-based Multimodal Transformer Architecture For Medical Tabular Data](https://arxiv.org/pdf/2303.17408.pdf) 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a> -->
