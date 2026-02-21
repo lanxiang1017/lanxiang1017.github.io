@@ -63,6 +63,9 @@ Jingyi Zhang, Tianyi Lin, Huanjin Yao, <span style="color:#3f51b5">**Xiang Lan**
   
 [[Page](https://arxiv.org/pdf/2602.03300)][[Code](https://github.com/jingyi0000/R1-SyntheticVL)]
 
+</div>
+</div>
+
 <!-- ECG-R1 -->
 <div class='paper-box'>
   <div class='paper-box-image'>
@@ -83,6 +86,9 @@ Jiarui Jin, Haoyu Wang, Xingliang Wu, Xiaocheng Fang, <span style="color:#3f51b5
 - Comprehensive benchmarking.
   
 [[Page](http://ai.heartvoice.com.cn/ECG-R1/)][[Code](https://github.com/PKUDigitalHealth/ECG-R1)]
+
+</div>
+</div>
 
 <!-- GEM -->
 <div class='paper-box'>
@@ -177,6 +183,13 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 </div>
 </div>
+
+- [Uniecg: Understanding and Generating ECG in One Unified Model](https://arxiv.org/pdf/2509.18588) 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
+  
+  Jiarui Jin, Haoyu Wang, Xiang Lan, Jun Li, Gaofeng Cheng, Hongyan Li, Shenda Hong
+
+  ``preprint`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
 - [P-Transformer: A Prompt-based Multimodal Transformer Architecture For Medical Tabular Data](https://arxiv.org/pdf/2303.17408.pdf) 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> <a><img src='https://img.shields.io/badge/Multimodal-fb595a'></a> -->
