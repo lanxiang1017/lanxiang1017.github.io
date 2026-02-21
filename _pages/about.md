@@ -23,6 +23,9 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 <span style="color:#3f51b5"> **Research Interests:**</span>  My research focuses on designing and applying models to address real-world healthcare challenges, with a long-term goal of building expert-level multimodal generalists to enhance clinical decision-making and improve patient care. My recent work concentrates on advancing MLLMs, leveraging their remarkable capacity for synergizing diverse modalities for reasoning and planning in clinical settings. Previously, I worked a lot on self-supervised learning models to improve label efficiency in the medical domain. I am also interested in time series modeling, and much of my work has involved time series data, as it is one of the most prevalent modalities in healthcare. I have published 10+ papers at the top international conferences and journals such as NeurIPS, ICLR, ECCV, AAAI, Information Fusion, and TIST. 
 
 # 🔥 News
+<!-- 2026 -->
+- **[02. 2026]** Our paper on synthetic data for MLLM now available at [arXiv](https://arxiv.org/pdf/2602.03300).
+- **[02. 2026]** Our ECG-R1 now available at [arXiv](https://arxiv.org/pdf/2602.04279).
 <!-- 2025 -->
 - **[09. 2025]** Our paper on empowering MLLM for grounded ECG understanding is accepted in [NeurIPS 2025](https://arxiv.org/pdf/2503.06073).
 - **[04. 2025]** Our paper on multimodal EHR modeling is accepted in [AIME 2025](https://arxiv.org/pdf/2303.17408.pdf).
@@ -38,6 +41,48 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 
 # 📝 Publications
+
+<!-- R1-SynVL -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">preprint</div>
+      <img src='images/r1-syn.png' alt="sym" width="100%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+[R1-SyntheticVL: Is Synthetic Data from Generative Models Ready for Multimodal Large Language Model?](https://arxiv.org/pdf/2602.03300)
+
+Jingyi Zhang, Tianyi Lin, Huanjin Yao, <span style="color:#3f51b5">**Xiang Lan**</span>, Shunyu Liu, Jiaxing Huang
+
+[**Project Contributions**](https://arxiv.org/pdf/2602.03300) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First work explores synthetic multimodal data from generative models for MLLMs.
+- MMSynthetic-20K, a highquality, diverse, and challenging multimodal dataset.
+- R1-SyntheticVL, a powerful MLLM trained via GRPO using MMSynthetic-20K.
+  
+[[Page](https://arxiv.org/pdf/2602.03300)][[Code](https://github.com/jingyi0000/R1-SyntheticVL)]
+
+<!-- ECG-R1 -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">preprint</div>
+      <img src='images/ecg-r1.png' alt="sym" width="100%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+[ECG-R1: Protocol-Guided and Modality-Agnostic MLLM for Reliable ECG Interpretation](https://arxiv.org/pdf/2602.04279)
+
+Jiarui Jin, Haoyu Wang, Xingliang Wu, Xiaocheng Fang, <span style="color:#3f51b5">**Xiang Lan**</span>, Zihan Wang, Deyun Zhang, Bo Liu, Yingying Zhang, Xian Wu, Hongyan Li, Shenda Hong
+
+[**Project Contributions**](https://arxiv.org/pdf/2602.04279) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First reasoning MLLM for ECG interpretation.
+- Protocol-Guided Instruction Data Generation.
+- Comprehensive benchmarking.
+  
+[[Page](http://ai.heartvoice.com.cn/ECG-R1/)][[Code](https://github.com/PKUDigitalHealth/ECG-R1)]
 
 <!-- GEM -->
 <div class='paper-box'>
