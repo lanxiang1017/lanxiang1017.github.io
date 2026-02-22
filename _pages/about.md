@@ -189,7 +189,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
   
   Deyun Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Shijia Geng, Qinghao Zhao, Sumei Fan, Mengling Feng, Shenda Hong
 
-  ``preprint``
+  ``Scientific Data`` <span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
 
 - [Uniecg: Understanding and Generating ECG in One Unified Model](https://arxiv.org/pdf/2509.18588) 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> -->
