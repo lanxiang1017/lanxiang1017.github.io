@@ -24,8 +24,8 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 # 🔥 News
 <!-- 2026 -->
-- **[02. 2026]** Our paper on synthetic data for MLLM now available at [arXiv](https://arxiv.org/pdf/2602.03300).
-- **[02. 2026]** Our ECG-R1 now available at [arXiv](https://arxiv.org/pdf/2602.04279).
+- **[04. 2026]** R1-SyntheticVL is accepted to [ICML 2026](https://arxiv.org/pdf/2602.03300).
+- **[04. 2026]** ECG-R1 is accepted to [ICML 2026](https://arxiv.org/pdf/2602.04279).
 <!-- 2025 -->
 - **[09. 2025]** Our paper on empowering MLLM for grounded ECG understanding is accepted in [NeurIPS 2025](https://arxiv.org/pdf/2503.06073).
 - **[04. 2025]** Our paper on multimodal EHR modeling is accepted in [AIME 2025](https://arxiv.org/pdf/2303.17408.pdf).
@@ -46,7 +46,7 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Preprint 2026</div>
+      <div class="badge">ICML 2026</div>
       <img src='images/r1-syn.png' alt="sym" width="100%">
     </div>
   </div>
@@ -70,7 +70,7 @@ Jingyi Zhang, Tianyi Lin, Huanjin Yao, <span style="color:#3f51b5">**Xiang Lan**
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">Preprint 2026</div>
+      <div class="badge">ICML 2026</div>
       <img src='images/ecg-r1.png' alt="sym" width="100%">
     </div>
   </div>
