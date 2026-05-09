@@ -24,7 +24,7 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 # 🔥 News
 <!-- 2026 -->
-- **[05. 2026]** Our paper on Healthcare Foundation Models is not available at [arXiv](https://arxiv.org/pdf/2605.02740)!.
+- **[05. 2026]** Our paper on Healthcare Foundation Models is now available at [arXiv](https://arxiv.org/pdf/2605.02740)!
 - **[04. 2026]** R1-SyntheticVL is accepted to [ICML 2026](https://arxiv.org/pdf/2602.03300).
 - **[04. 2026]** ECG-R1 is accepted to [ICML 2026](https://arxiv.org/pdf/2602.04279).
 <!-- 2025 -->
