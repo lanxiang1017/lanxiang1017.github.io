@@ -24,6 +24,7 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 # 🔥 News
 <!-- 2026 -->
+- **[05. 2026]** Our paper on Healthcare Foundation Models is not available at [arXiv](https://arxiv.org/pdf/2605.02740)!.
 - **[04. 2026]** R1-SyntheticVL is accepted to [ICML 2026](https://arxiv.org/pdf/2602.03300).
 - **[04. 2026]** ECG-R1 is accepted to [ICML 2026](https://arxiv.org/pdf/2602.04279).
 <!-- 2025 -->
@@ -41,6 +42,33 @@ I am a postdoctoral researcher in the [Clinical NLP Lab](https://clinicalnlp.org
 
 
 # 📝 Publications
+
+<!-- ReClaim -->
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">arXiv 2026</div>
+      <img src='images/reclaim.png' alt="sym" width="100%">
+    </div>
+  </div>
+<div class='paper-box-text' markdown="1">
+
+[Foundation Models to Unlock Real-World Evidence from Nationwide Medical Claims](https://arxiv.org/pdf/2605.02740)
+
+Fan Ma\* , Yuntian Liu\*,  <span style="color:#3f51b5">**Xiang Lan\***</span>, ... , Hua Xu\\
+<span style="color:#3f51b5;font-weight:700;font-size:15px"> (\*co-first author) </span>
+
+[**Project Contributions**](https://arxiv.org/pdf/2605.02740) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- First healthcare foundation model trained on a nationwide medical claims dataset with 43.8B medical events from 200M+ patients in the U.S. (2008-2022).
+- 75.6% mean AUC across 1,000+ disease prediction tasks (LightGBM: 66.3%).
+- Holds up on 2023+ data and two external EHR datasets it has never seen.
+- Improves healthcare cost prediction (R<sup>2</sup>: 0.28 &rarr; 0.37 vs LightGBM).
+- Reduces bias in target trial emulation vs traditional propensity score approaches.
+  
+[[Page](https://arxiv.org/pdf/2605.02740)]
+
+</div>
+</div>
 
 <!-- R1-SynVL -->
 <div class='paper-box'>
