@@ -290,6 +290,7 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
   ``Computing in Cardiology 2020``
 
 # 🎖 Honors and Awards
+- *2026* Yale-Boehringer Ingelheim Biomedical Data Science Fellowship, Yale
 - *2024* Graduate Student Research Award, NUS
 - *2020* Championship, SG Healthcare Datathon 2020 
 - *2020* 2nd Runner-up, PhysioNet/Computing in Cardiology Challenge 2020
@@ -301,4 +302,4 @@ Jihai Zhang\*, <span style="color:#3f51b5">**Xiang Lan\***</span>, Xiaoye Qu, Yu
 
 
 # 🌍 Academic Services
-I serve as a reviewer for **ICLR, NeurIPS, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science, npj Digital Medicine**.
+I serve as a reviewer for **NeurIPS, ICLR, WWW, AAAI, KDD, TNNLS, TIST, Health Data Science, npj Digital Medicine, ACM Transactions on Computing for Healthcare**.
