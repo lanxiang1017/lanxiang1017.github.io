@@ -22,6 +22,7 @@ gem 'csv'
 gem 'logger'
 gem 'base64'
 gem 'bigdecimal'
+gem 'webrick'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

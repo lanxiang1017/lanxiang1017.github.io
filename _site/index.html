@@ -22,8 +22,8 @@
 <meta property="og:title" content="Lan Xiang">
 
 
-  <link rel="canonical" href="https://github.com/pages/lanxiang1017/lanxiang1017.github.io.git/">
-  <meta property="og:url" content="https://github.com/pages/lanxiang1017/lanxiang1017.github.io.git/">
+  <link rel="canonical" href="http://localhost:4000/">
+  <meta property="og:url" content="http://localhost:4000/">
 
 
 
@@ -242,8 +242,9 @@
 <h1 id="-news">🔥 News</h1>
 <!-- 2026 -->
 <ul>
-  <li><strong>[02. 2026]</strong> Our paper on synthetic data for MLLM now available at <a href="https://arxiv.org/pdf/2602.03300">arXiv</a>.</li>
-  <li><strong>[02. 2026]</strong> Our ECG-R1 now available at <a href="https://arxiv.org/pdf/2602.04279">arXiv</a>.
+  <li><strong>[05. 2026]</strong> Our paper on Healthcare Foundation Models is now available at <a href="https://arxiv.org/pdf/2605.02740">arXiv</a>!</li>
+  <li><strong>[04. 2026]</strong> R1-SyntheticVL is accepted to <a href="https://arxiv.org/pdf/2602.03300">ICML 2026</a>.</li>
+  <li><strong>[04. 2026]</strong> ECG-R1 is accepted to <a href="https://arxiv.org/pdf/2602.04279">ICML 2026</a>.
 <!-- 2025 --></li>
   <li><strong>[09. 2025]</strong> Our paper on empowering MLLM for grounded ECG understanding is accepted in <a href="https://arxiv.org/pdf/2503.06073">NeurIPS 2025</a>.</li>
   <li><strong>[04. 2025]</strong> Our paper on multimodal EHR modeling is accepted in <a href="https://arxiv.org/pdf/2303.17408.pdf">AIME 2025</a>.
@@ -259,11 +260,40 @@
 
 <h1 id="-publications">📝 Publications</h1>
 
+<!-- ReClaim -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">arXiv 2026</div>
+      <img src="images/reclaim.png" alt="sym" width="100%" />
+    </div>
+  </div>
+<div class="paper-box-text">
+
+    <p><a href="https://arxiv.org/pdf/2605.02740">Foundation Models to Unlock Real-World Evidence from Nationwide Medical Claims</a></p>
+
+    <p>Fan Ma* , Yuntian Liu*,  <span style="color:#3f51b5"><strong>Xiang Lan*</strong></span>, … , Hua Xu<br />
+<span style="color:#3f51b5;font-weight:700;font-size:15px"> (*co-first author) </span></p>
+
+    <p><a href="https://arxiv.org/pdf/2605.02740"><strong>Project Contributions</strong></a> <strong><span class="show_paper_citations" data="DhtAFkwAAAAJ:ALROH1vI_8AC"></span></strong></p>
+    <ul>
+      <li>First healthcare foundation model trained on a nationwide medical claims dataset with 43.8B medical events from 200M+ patients in the U.S. (2008-2022).</li>
+      <li>75.6% mean AUC across 1,000+ disease prediction tasks (LightGBM: 66.3%).</li>
+      <li>Holds up on 2023+ data and two external EHR datasets it has never seen.</li>
+      <li>Improves healthcare cost prediction (R<sup>2</sup>: 0.28 → 0.37 vs LightGBM).</li>
+      <li>Reduces bias in target trial emulation vs traditional propensity score approaches.</li>
+    </ul>
+
+    <p>[<a href="https://arxiv.org/pdf/2605.02740">Page</a>]</p>
+
+  </div>
+</div>
+
 <!-- R1-SynVL -->
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge">preprint</div>
+      <div class="badge">ICML 2026</div>
       <img src="images/r1-syn.png" alt="sym" width="100%" />
     </div>
   </div>
@@ -289,7 +319,7 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge">preprint</div>
+      <div class="badge">ICML 2026</div>
       <img src="images/ecg-r1.png" alt="sym" width="100%" />
     </div>
   </div>
@@ -410,12 +440,20 @@
 
 <ul>
   <li>
+    <p><a href="https://arxiv.org/pdf/2507.15255">MEETI: A Multimodal ECG Dataset from MIMIC-IV-ECG with Signals, Images, Features and Interpretations</a> 
+<!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> --></p>
+
+    <p>Deyun Zhang*, <span style="color:#3f51b5"><strong>Xiang Lan*</strong></span>, Shijia Geng, Qinghao Zhao, Sumei Fan, Mengling Feng, Shenda Hong</p>
+
+    <p><code class="language-plaintext highlighter-rouge">Scientific Data</code> <span style="color:#3f51b5;font-weight:700;font-size:15px"> (*co-first author) </span></p>
+  </li>
+  <li>
     <p><a href="https://arxiv.org/pdf/2509.18588">Uniecg: Understanding and Generating ECG in One Unified Model</a> 
 <!-- - <a><img src='https://img.shields.io/badge/EHR-A0DAA8'></a> --></p>
 
-    <p>Jiarui Jin, Haoyu Wang, Xiang Lan, Jun Li, Gaofeng Cheng, Hongyan Li, Shenda Hong</p>
+    <p>Jiarui Jin, Haoyu Wang, <span style="color:#3f51b5"><strong>Xiang Lan</strong></span>, Jun Li, Gaofeng Cheng, Hongyan Li, Shenda Hong</p>
 
-    <p><code class="language-plaintext highlighter-rouge">preprint</code> <span style="color:#3f51b5;font-weight:700;font-size:15px"> (*co-first author) </span></p>
+    <p><code class="language-plaintext highlighter-rouge">preprint</code></p>
   </li>
   <li>
     <p><a href="https://arxiv.org/pdf/2303.17408.pdf">P-Transformer: A Prompt-based Multimodal Transformer Architecture For Medical Tabular Data</a> 
